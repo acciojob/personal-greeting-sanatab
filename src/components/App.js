@@ -4,12 +4,10 @@ import { useState } from 'react';
 function App() {
   const [inpval, setInpval] = useState("");
 
-  function getData(event){
+  const getData=(event)=>{
      setInpval(event.target.value)
   }
  
-
-  console.log(inpval)
   return (
     <div className="App">
       <label>Enter your Name:</label>
@@ -18,9 +16,9 @@ function App() {
       <br></br>
       <input type="text" value={inpval} onChange={getData}  />
 
-      <p >{inpval ? `Hello ${inpval}!` :""} </p>
+      <p >{inpval ? `Hello ${inpval}!` :''} </p>
     </div>
-  );
+  )
 }
 
 export default App;
