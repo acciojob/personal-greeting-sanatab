@@ -18,7 +18,7 @@ function App() {
       <br></br>
       <input type="text" value={inpval} onChange={getData}  />
 
-      <p >{inpval? `Hello ${inpval}!`:""} </p>
+      <p >{inpval ? `Hello ${inpval}!` :""} </p>
     </div>
   );
 }
