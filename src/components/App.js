@@ -8,9 +8,7 @@ function App() {
   function getData(event){
      setInpval(event.target.value)
   }
-   
-
-  
+ 
 
   console.log(inpval)
   return (
@@ -21,11 +19,12 @@ function App() {
       <br></br>
       <input type="text"  onChange={getData}  />
 
-      <p >{`hello ${inpval}!`} </p>
+      <p >{inpval? `hello ${inpval}!`:""} </p>
     </div>
   );
 }
 
 export default App;
+
 
 
